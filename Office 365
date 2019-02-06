@@ -1,0 +1,3 @@
+Office 365 : Disabling SMTP/IMAP/POP/ActiveSync on ALL of our mailboxes
+
+Get-Mailbox -ResultSize Unlimited | Set-CASMailbox -PopEnabled $false -ImapEnabled $false -SmtpClientAuthenticationDisabled $true -ActiveSyncEnabled $false
